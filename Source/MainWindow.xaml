@@ -1,0 +1,33 @@
+﻿<Window x:Class="PSWDGenerator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PSWDGenerator"
+        mc:Ignorable="d"
+        Title="┬─┬ ノ( ゜-゜ノ) Генератор паролей" Height="770" Width="500" ResizeMode="NoResize" Icon="Gem.ico" FontFamily="Consolas" FontSize="14">
+    <Window.Background>
+        <ImageBrush ImageSource="mona.jpg" Stretch="UniformToFill"/>
+    </Window.Background>
+    <Grid Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Количество паролей" HorizontalAlignment="Left" VerticalAlignment="Top" Width="171" Margin="10,10,0,0" FontFamily="Consolas" Height="26" Foreground="White" Grid.Column="1">
+            <Label.Background>
+                <SolidColorBrush Color="#BF000000"/>
+            </Label.Background>
+        </Label>
+        <Label Content="Длина паролей" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="171" Background="#BF000000" Height="26" Foreground="White" Grid.Column="1"/>
+        <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Height="26" Margin="192,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="64" Background="#BF000000" Grid.Column="1" Foreground="White" BorderBrush="#00ABADB3" FontSize="19" Text="0" TextAlignment="Center" Grid.ColumnSpan="2" TextChanged="TextBox1_TextChanged"/>
+        <TextBox x:Name="TextBox2" HorizontalAlignment="Left" Height="26" Margin="192,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="64" Background="#BF000000" Grid.Column="1" Foreground="White" BorderBrush="#00ABADB3" FontSize="19" Text="0" TextAlignment="Center" Grid.ColumnSpan="2" TextChanged="TextBox2_TextChanged"/>
+        <Button x:Name="Button1" Content="Сгенерировать пароли" HorizontalAlignment="Left" Margin="43,10,0,0" VerticalAlignment="Top" Width="166" Height="56" Grid.Column="2" Background="#BF000000" Foreground="White" BorderBrush="#00707070" Click="Button1_Click"/>
+        <TextBox x:Name="richBoxText1" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="497" Margin="10,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="424" Foreground="White" Background="#7F000000" BorderBrush="#00000000" SelectionBrush="#BF0078D7" TextChanged="richBoxText1_TextChanged"/>
+        <Button x:Name="Button2" Grid.ColumnSpan="2" Content="Очистить" HorizontalAlignment="Left" Margin="10,156,0,0" VerticalAlignment="Top" Width="171" Height="28" Foreground="White" Background="#BF000000" BorderBrush="#00707070" Click="Button2_Click"/>
+        <CheckBox x:Name="checkbox1" Grid.ColumnSpan="3" Content="Пронумеровать пароли" HorizontalAlignment="Left" Margin="10,104,0,0" VerticalAlignment="Top" Width="246" Foreground="White" BorderBrush="#7F000000" Background="#7F000000" OpacityMask="Black"/>
+
+    </Grid>
+</Window>
